@@ -14,9 +14,9 @@ jobs:
         - name: deploy via ssh
           uses: applyboy/ssh-actions@v1
           with: 
-            host: ${{ secret.SSH_HOST }}
+            host: ${{ secrets.SSH_HOST }}
             username: ubuntu
-            key: ${{ secret.SSH_KEY }}
+            key: ${{ secrets.SSH_KEY }}
             script: |
               cd ~/server
               git pull
