@@ -8,7 +8,7 @@ const app = express()
 const PORT = process.env.PORT || 3000
 
 app.get("/health" , (req,res) => {
-  return res.status(200).json({"status":"AWS server is live"})
+  return res.status(200).json({"status":"AWS server is live with ci cd integrated"})
 })
 
 app.get("/", (req, res) => {
